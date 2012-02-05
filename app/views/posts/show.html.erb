@@ -1,0 +1,14 @@
+<% content_for :breadcrumb do %>
+  <li><%= link_to "Home", root_path %> <span class="divider">/</span></li>
+  <li class="active"><%= @post.title %></li>
+<% end %>
+
+<article>
+  <header>
+    <h1><%= @post.title %> <small><%= link_to "edit", edit_post_path(@post) %></small></h1>
+  </header>
+
+  <div class="content">
+    <%= @post.body %>
+  </div>
+</article>

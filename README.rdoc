@@ -1,0 +1,11 @@
+== Example Rails App combining Twitter Bootstrap and SimpleForm
+
+Twitter Bootstrap:
+http://twitter.github.com/bootstrap/index.html
+
+twitter-bootstrap-rails gem
+https://github.com/seyhunak/twitter-bootstrap-rails
+
+simple_form gem:
+https://github.com/plataformatec/simple_form
+

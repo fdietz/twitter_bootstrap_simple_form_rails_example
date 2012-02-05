@@ -1,0 +1,23 @@
+<%= simple_form_for @post, :html => { :class => 'form-horizontal' } do |f| %>
+
+  <% if f.error_notification %>
+    <div class="alert alert-error fade in">
+      <a class="close" data-dismiss="alert" href="#">&times;</a>
+      <%= f.error_notification %>
+    </div>
+  <% end %>
+
+  <legend>Post</legend>
+
+  <%= f.input :title, :input_html => { :class => "span6" },
+              :hint => "add your article title here" %>
+  <%= f.input :published, :as => :boolean %>
+
+  <%= f.input :body, :input_html => { :class => "span6" } %>
+  
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= submit_tag 'Cancel', :type => :reset, :class => "btn btn-danger" %>
+  </div>
+
+<% end %>
